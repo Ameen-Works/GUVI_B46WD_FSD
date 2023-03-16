@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTTP 1.1 vs HTTP 2</title>
+    </head>
+    <body>
+        <h1>Difference between HTTP1.1 and HTTP2</h1>
+        <h2><i>HTTP 1.1</i></h2>
+        <p>HTTP (Hypertext Transfer Protocol) is a set of rules that runs on top of the TCP/IP suite of protocols and defines how files are to be transferred between clients and servers on the world wide web.In the earliest phase (HTTP/0.9), the HTTP protocol did not use headers and only transmitted plain HTML files. It was a one-line protocol only supporting the GET method.As the need to exchange more than just plain HTML emerged along with the client and server applications becoming more mature, HTTP/1.0 (between 1991-1996) introduced several new features.</p>
+        <ul style="list-style:square;">
+            <li>The concept of headers both for requests (from the client machine) as well as responses (from servers) was introduced. The use of headers such as GET, POST, HEAD added extended flexibility, none of which was possible with the earlier version.
+                Version information was now included.</li>
+            <li>It allowed a single request/response for every TCP connection.</li>
+            <li>Status codes were used to indicate successful requests and to indicate transmission errors.</li>
+            <li>The content-type header made it possible to send files other than plain HTML, including scripts and media.</li>
+        </ul>
+        <h2><i>HTTP 2</i></h2>
+        <p>At the beginning of 2010, Google introduced an experimental protocol, SPDY, which supported multiplexing (multiple requests/responses sent and received asynchronously over a single TCP connection) but as it gained traction IETF’s HTTP Working Group came up with HTTP/2 in 2015, which is based on the SPDY protocol.</p>
+        <ul style="list-style: square;">
+            <li>It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests. The client retains the authority to deny the server push; however, in most cases, this feature adds a lot of efficiency to the process.</li>
+            <li>Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.</li>
+            <li>It is a binary protocol i.e. only binary commands in the form of 0s and 1s are transmitted over the wire. The binary framing layer divides the message into frames that are segregated based on their type – Data or Header. This feature greatly increases efficiency in terms of security, compression and multiplexing.</li>
+            <li>HTTP/2 uses HPACK header compression algorithm that is resilient to attacks like CRIME and utilizes static Huffman encoding.</li>
+        </ul>
+    </body>
+</html>
