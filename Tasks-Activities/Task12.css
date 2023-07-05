@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid black;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+th {
+    align-items: center;
+    width: 15ch;
+}
+
+td {
+    justify-content: center;
+    width: 15ch;
+}
+
+td input {
+    justify-content: center;
+    width: 15ch;
+}
+
+.checked {
+    color: orange;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: white;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+}

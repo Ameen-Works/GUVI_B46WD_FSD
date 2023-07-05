@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Simple CRUD</title>
+    <script src="./CRUD-html.js"></script>
+</head>
+
+<body>
+    <h1>Simple CRUD Operation</h1>
+
+    <!-- Form for adding a new item -->
+    <h2>Add Item</h2>
+    <form id="addItemForm" method="post" action="create.php">
+        <input type="text" name="itemName" placeholder="Item Name" required>
+        <input type="submit" value="Add Item">
+    </form>
+
+    <!-- Table for displaying existing items -->
+    <h2>Items List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Item Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="itemsList">
+            <!-- Item rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
