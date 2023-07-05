@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Countdown Example</title>
-  <style>
-    #countdown {
-      font-size: 48px;
-      text-align: center;
-    }
-  </style>
+  <title>Countdown!!!</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
   <h1>Countdown Example</h1>
   <div id="countdown">Countdown will appear here</div>
@@ -21,15 +18,16 @@
         callback();
       } else {
         countdownElement.innerText = number;
-        setTimeout(function() {
+        setTimeout(function () {
           count(number - 1, callback);
         }, 1000);
       }
     }
 
-    count(10, function() {
+    count(10, function () {
       countdownElement.innerText = 'Happy Independence Day!';
     });
   </script>
 </body>
+
 </html>
